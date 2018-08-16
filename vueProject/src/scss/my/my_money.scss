@@ -1,0 +1,15 @@
+
+
+#My_money{font-size: .13rem;}
+.my_money_content{background: #ffffff;width: 100%;height: 100%;margin-top: 0.1rem;font-size: .13rem;
+  .content-list{box-sizing:border-box;width: 100%;height: 0.64rem;padding: 0.16rem;display: flex;justify-content: space-between;align-items: center;
+    border-bottom: 0.01rem solid #F2F4F3;
+    .content-left{display: flex;align-items: center;
+      .content-time{display: inline-block;width: 0.35rem;font-size: 0.12rem;color: #999999}
+      .content-name{font-size: 0.14rem;color: #333333;}
+      .content-money{font-size: 0.15rem;color: $home-color;}
+    }
+    .content-right{font-size: 0.14rem;}
+  }
+}
+.test{left: 0;display: none;transition: top .2s linear}

@@ -1,0 +1,122 @@
+.bet_set_page {
+    font-size: 1rem;
+    .choose_lang {
+        .lang_selection {
+            font-size: .14rem;
+            color: #999999;
+            padding: .11rem .18rem;
+        }
+        .sim_item,.com_item {
+            background-color: #fff;
+            height: .46rem;
+            padding:0 .2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: .01rem;
+            .radio_button {
+                font-size: .17rem;
+                color: #ffffff;
+                display:inline-block;
+                width: .2rem;
+                height: .2rem;
+                text-align: center;
+                vertical-align: middle;
+                background-color: $home-color;
+                border-radius: 10px;
+            }
+        }
+        .com_item {
+            .radio_button {
+                font-size: .17rem;
+            }
+        }
+    }
+    .bet_type {
+        .bet_type_txt {
+            font-size: .14rem;
+            color: #999999;
+            padding: .11rem .18rem;
+        }
+        .hk_disc, .eu_disc, .ma_disc, .ind_disc {
+            background-color: #fff;
+            height: .46rem;
+            padding:0 .2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: .01rem;
+            .radio_button {
+                font-size: .17rem;
+                color: #ffffff;
+                display:inline-block;
+                width: .2rem;
+                height: .2rem;
+                text-align: center;
+                vertical-align: middle;
+                background-color: $home-color;
+                border-radius: 10px;
+            }
+        }
+    }
+    .show_bet_rate {
+        background-color: #fff;
+        border-top: .01rem solid #eee;
+        .bet_rate_color, .show_arrow {
+            height: .46rem;
+            padding:0 .2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: .01rem;
+            .txt_style {
+                font-size: .15rem;
+                .rate_color_green {
+                    color: #09D577;
+                }
+                .rate_color_red {
+                    color: #D50926;
+                }
+            }
+            .radio_button {
+                font-size: .17rem;
+                color: #ffffff;
+                display:inline-block;
+                width: .2rem;
+                height: .2rem;
+                line-height:.2rem;
+                border-radius: 10px;
+                text-align: center;
+                background-color: $home-color;
+            }
+        }
+        .show_arrow {
+            border-top: .01rem solid #eee;
+            .arrow_txt_style {
+                .arrow_num_style {
+                    font-size: .15rem;
+                    color: #333;
+                }
+                .arrow_up_green {
+                    color: #09D577;
+                    display:inline-block;
+                    font-size: .14rem;
+                    position:relative;
+                    top: -2px;
+                    left: -3px;
+                }
+                .arrow_down_red {
+                    color: #D50926;
+                    display:inline-block;
+                    font-size: .14rem;
+                    position:relative;
+                    top: -2px;
+                    left: -3px;
+                }
+            }
+        }
+    }
+}
