@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    let draw = function (count) {
+        // ...具体逻辑
+        $.ajax({
+            url: '/test',
+            method: 'POST',
+            data: {count:count},
+            contentType: false, // 注意这里应设为false
+            processData: false,
+            cache: false,
+            success: function (data) {
+                // if (JSON.parse(data).result == 1) {
+                //     $('.prompt').html(`文件${JSON.parse(data).filename}已上传成功`);
+                // }
+                console.log(data)
+            },
+            error: function (jqXHR) {
+                console.log(jqXHR)
+            }
+        })
+        return `剩余 ${count} 次`
+    };
+    let residue = function* (count) {
+        while (count > 0) {
+            count--;
+            yield draw(count);
+        }
+    }
+    let star = residue(5);
+    let btn = document.createElement('button');
+    btn.id = 'start';
+    btn.textContent = '抽奖';
+    document.body.appendChild(btn);
+    document.getElementById('start').addEventListener('click', function () {
+        console.log(star.next());
+    }, false)
+</script>
+
+</html>
